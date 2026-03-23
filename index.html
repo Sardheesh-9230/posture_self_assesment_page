@@ -1,0 +1,880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Posture Self-Assessment Using Deep Learning</title>
+  <meta name="description" content="A comprehensive educational resource on Posture Self-Assessment Using Deep Learning — covering techniques, frameworks, applications, and key journal references." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#hero" class="nav-logo">
+        <span class="logo-icon">🧠</span>
+        <span>PostureDL</span>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#overview"    class="nav-link">Overview</a></li>
+        <li><a href="#how-it-works" class="nav-link">How It Works</a></li>
+        <li><a href="#techniques"   class="nav-link">Techniques</a></li>
+        <li><a href="#applications" class="nav-link">Applications</a></li>
+        <li><a href="#challenges"   class="nav-link">Challenges</a></li>
+        <li><a href="#references"   class="nav-link">References</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-particles">
+      <div class="particle p1"></div>
+      <div class="particle p2"></div>
+      <div class="particle p3"></div>
+      <div class="particle p4"></div>
+      <div class="particle p5"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge">🔬 Research &amp; Technology</div>
+      <h1 class="hero-title">
+        Posture Self-Assessment<br />
+        <span class="gradient-text">Using Deep Learning</span>
+      </h1>
+      <p class="hero-subtitle">
+        Harnessing the power of AI, computer vision, and neural networks to enable 
+        real-time, objective, and accessible posture analysis for everyone.
+      </p>
+      <div class="hero-cta">
+        <a href="#overview" class="btn btn-primary">Explore Research</a>
+        <a href="#references" class="btn btn-outline">View Journals</a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat">
+          <span class="stat-number">95%+</span>
+          <span class="stat-label">Accuracy Achieved</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">Real-Time</span>
+          <span class="stat-label">Feedback</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat">
+          <span class="stat-number">3D</span>
+          <span class="stat-label">Pose Estimation</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="skeleton-card">
+        <div class="skeleton-head"></div>
+        <div class="skeleton-body">
+          <div class="skeleton-shoulder left"></div>
+          <div class="skeleton-spine"></div>
+          <div class="skeleton-shoulder right"></div>
+        </div>
+        <div class="skeleton-hips"></div>
+        <div class="skeleton-legs">
+          <div class="skeleton-leg left"></div>
+          <div class="skeleton-leg right"></div>
+        </div>
+        <div class="keypoints">
+          <div class="kp kp1"></div><div class="kp kp2"></div>
+          <div class="kp kp3"></div><div class="kp kp4"></div>
+          <div class="kp kp5"></div><div class="kp kp6"></div>
+          <div class="kp kp7"></div>
+        </div>
+        <div class="scan-line"></div>
+        <div class="card-label">AI Pose Estimation</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== OVERVIEW ===== -->
+  <section class="section" id="overview">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Introduction</span>
+        <h2 class="section-title">What is Posture Self-Assessment?</h2>
+        <p class="section-subtitle">
+          Understanding the role of deep learning in revolutionising how we evaluate and correct human posture
+        </p>
+      </div>
+      <div class="overview-grid">
+        <div class="overview-text">
+          <p>
+            <strong>Posture Self-Assessment</strong> refers to the process by which individuals evaluate their own body alignment
+            — the relative positioning of joints, limbs, and the spine — without necessarily relying on a clinician or external expert.
+            Traditionally, postural assessment has depended on trained physiotherapists using manual, often subjective, observation methods
+            such as visual inspection, goniometry, or photographs.
+          </p>
+          <p>
+            With the advent of <em>deep learning</em> and <em>computer vision</em>, it is now possible to automate, objectify, and 
+            democratise this process. AI-powered systems can analyse images or video streams from standard cameras, 
+            identify key body landmarks (keypoints), compute joint angles, and classify posture quality — all in real time.
+          </p>
+          <p>
+            This shift is critical for addressing the growing epidemic of musculoskeletal disorders (MSDs), which are the leading 
+            cause of disability worldwide, often rooted in prolonged poor posture in workplaces, classrooms, and homes.
+          </p>
+          <div class="highlight-box">
+            <span class="highlight-icon">📌</span>
+            <span><strong>Key Insight:</strong> Deep learning removes clinician bias and enables continuous, scalable posture monitoring 
+            that is practically impossible with traditional methods.</span>
+          </div>
+        </div>
+        <div class="overview-cards">
+          <div class="info-card">
+            <div class="card-icon">🎯</div>
+            <h3>Objective &amp; Accurate</h3>
+            <p>Eliminates subjectivity of manual postural assessment by providing quantitative, repeatable metrics.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">⚡</div>
+            <h3>Real-Time Feedback</h3>
+            <p>Delivers instant visual and audio feedback during exercise, work, or rehabilitation sessions.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">📱</div>
+            <h3>Accessible Anywhere</h3>
+            <p>Lightweight models run on smartphones, laptops, and embedded devices — no specialized hardware needed.</p>
+          </div>
+          <div class="info-card">
+            <div class="card-icon">🔄</div>
+            <h3>Continuous Monitoring</h3>
+            <p>Enables 24/7 ergonomic risk tracking rather than periodic manual assessments.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW IT WORKS ===== -->
+  <section class="section section-dark" id="how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Methodology</span>
+        <h2 class="section-title">How It Works</h2>
+        <p class="section-subtitle">
+          A step-by-step pipeline from raw image/video input to actionable posture feedback
+        </p>
+      </div>
+      <div class="pipeline">
+        <div class="pipeline-step">
+          <div class="step-number">01</div>
+          <div class="step-icon">📷</div>
+          <h3>Input Capture</h3>
+          <p>Images or video frames are captured from a webcam, smartphone camera, or wearable sensor system. Depth cameras (RGB-D) can also provide 3D spatial data.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-number">02</div>
+          <div class="step-icon">🔍</div>
+          <h3>Preprocessing</h3>
+          <p>Frames are resized, normalized, and optionally augmented. Background subtraction or segmentation may be applied to isolate the human subject.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-number">03</div>
+          <div class="step-icon">🤖</div>
+          <h3>Pose Estimation</h3>
+          <p>A deep learning model (CNN-based, transformer-based, or hybrid) detects key body landmarks — shoulders, hips, knees, elbows, and spine — producing 2D or 3D keypoint coordinates.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-number">04</div>
+          <div class="step-icon">📐</div>
+          <h3>Feature Extraction</h3>
+          <p>Joint angles, relative distances, symmetry indices, and temporal motion patterns are derived from the keypoint data as posture features.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-number">05</div>
+          <div class="step-icon">🏷️</div>
+          <h3>Classification</h3>
+          <p>A classifier (Random Forest, SVM, or deep classifier) maps the features to a posture category — correct, kyphosis, lordosis, scoliosis, forward head posture, etc.</p>
+        </div>
+        <div class="pipeline-arrow">→</div>
+        <div class="pipeline-step">
+          <div class="step-number">06</div>
+          <div class="step-icon">💬</div>
+          <h3>Feedback Generation</h3>
+          <p>Visual overlays, corrective audio cues, or ergonomic risk scores are generated and presented to the user, enabling immediate self-correction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TECHNIQUES ===== -->
+  <section class="section" id="techniques">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Deep Learning Frameworks</span>
+        <h2 class="section-title">Key Techniques &amp; Frameworks</h2>
+        <p class="section-subtitle">
+          Core technologies powering posture self-assessment research and applications
+        </p>
+      </div>
+      <div class="tech-grid">
+
+        <div class="tech-card featured">
+          <div class="tech-badge">Most Popular</div>
+          <div class="tech-logo">🎯</div>
+          <h3>MediaPipe Pose</h3>
+          <p>
+            Google's MediaPipe framework provides a <strong>33-keypoint holistic body landmark detection</strong> pipeline 
+            optimised for real-time performance on edge devices. It uses a lightweight CNN backbone and BlazePose 
+            detector to achieve sub-30ms inference per frame, making it highly suitable for mobile and web-based 
+            posture self-assessment applications.
+          </p>
+          <ul class="tech-features">
+            <li>✅ 33 body landmarks (including 3D)</li>
+            <li>✅ Runs on CPU, GPU, and mobile NPU</li>
+            <li>✅ &gt;95% accuracy in controlled settings</li>
+            <li>✅ No CUDA requirement</li>
+          </ul>
+          <div class="tech-source">Source: Kim et al., Applied Sciences (MDPI), 2023</div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-logo">🔗</div>
+          <h3>OpenPose</h3>
+          <p>
+            Carnegie Mellon University's <strong>OpenPose</strong> is a foundational bottom-up multi-person pose estimation system using 
+            <em>Part Affinity Fields (PAFs)</em>. It simultaneously detects 25 body keypoints for multiple people in a single image, 
+            offering high COCO dataset accuracy (above 80% AP) and wide research adoption in ergonomics and clinical studies.
+          </p>
+          <ul class="tech-features">
+            <li>✅ Multi-person detection</li>
+            <li>✅ 25 keypoints (body, face, hands)</li>
+            <li>✅ GPU-accelerated real-time</li>
+            <li>✅ Industry standard benchmark</li>
+          </ul>
+          <div class="tech-source">Source: Cao et al., IEEE TPAMI, 2021</div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-logo">⚡</div>
+          <h3>CNN Architectures</h3>
+          <p>
+            <strong>Convolutional Neural Networks</strong> are the cornerstone of all vision-based pose estimation systems. 
+            Architectures like ResNet, HRNet, VGG, and MobileNet serve as feature extractors. High-Resolution Networks (HRNet) 
+            maintain spatial resolution throughout — dramatically improving keypoint localisation accuracy compared to older 
+            encoder-decoder approaches.
+          </p>
+          <ul class="tech-features">
+            <li>✅ Spatial feature extraction</li>
+            <li>✅ Transfer learning ready</li>
+            <li>✅ HRNet: state-of-the-art accuracy</li>
+            <li>✅ MobileNet: lightweight for mobile</li>
+          </ul>
+          <div class="tech-source">Source: MDPI Sensors; IEEE Access, 2022–2024</div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-logo">⏱️</div>
+          <h3>LSTM &amp; Temporal Models</h3>
+          <p>
+            <strong>Long Short-Term Memory (LSTM)</strong> networks process sequences of pose keypoints over time, capturing 
+            the temporal dynamics of movement. Hybrid CNN-LSTM architectures extract spatial features per frame (CNN) 
+            and temporal dependencies across frames (LSTM), enabling accurate assessment of dynamic postures 
+            during walking, lifting, or exercising.
+          </p>
+          <ul class="tech-features">
+            <li>✅ Captures motion dynamics</li>
+            <li>✅ Handles occlusion with temporal context</li>
+            <li>✅ Bidirectional LSTM for full context</li>
+            <li>✅ Video-based ergonomic analysis</li>
+          </ul>
+          <div class="tech-source">Source: NIH PubMed; MDPI Applied Sciences, 2023</div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-logo">🦾</div>
+          <h3>Vision Transformers (ViT)</h3>
+          <p>
+            Recent research applies <strong>Vision Transformers</strong> and attention-based mechanisms to pose estimation. 
+            Models like TransPose and TokenPose use self-attention to capture long-range body-part dependencies, outperforming 
+            CNN-only approaches on challenging benchmarks with complex occlusions or crowded scenes.
+          </p>
+          <ul class="tech-features">
+            <li>✅ Long-range dependency modelling</li>
+            <li>✅ Superior in occluded scenarios</li>
+            <li>✅ State-of-the-art on COCO, PoseTrack</li>
+            <li>✅ Future-proof architecture</li>
+          </ul>
+          <div class="tech-source">Source: Northumbria University; ArXiv, 2024</div>
+        </div>
+
+        <div class="tech-card">
+          <div class="tech-logo">🌀</div>
+          <h3>AlphaPose &amp; MoveNet</h3>
+          <p>
+            <strong>AlphaPose</strong> (SJTU) uses a regional multi-person pose estimation approach for high accuracy in crowded scenes. 
+            Google's <strong>MoveNet</strong> (Thunder/Lightning) prioritises ultra-fast inference (&lt;5ms on mobile GPU), 
+            making it ideal for mobile self-assessment apps requiring minimal latency.
+          </p>
+          <ul class="tech-features">
+            <li>✅ AlphaPose: best multi-person accuracy</li>
+            <li>✅ MoveNet: fastest mobile inference</li>
+            <li>✅ Single-shot detection</li>
+            <li>✅ Open-source and well-documented</li>
+          </ul>
+          <div class="tech-source">Source: Chung et al., Future Internet (MDPI), 2022</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== APPLICATIONS ===== -->
+  <section class="section section-gradient" id="applications">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Real-World Use Cases</span>
+        <h2 class="section-title">Applications Across Domains</h2>
+        <p class="section-subtitle">
+          Deep learning posture assessment is transforming multiple sectors
+        </p>
+      </div>
+      <div class="app-grid">
+        <div class="app-card">
+          <div class="app-icon">🏥</div>
+          <h3>Clinical Rehabilitation</h3>
+          <p>
+            AI-powered platforms guide patients through physiotherapy exercises remotely, tracking joint range of motion, 
+            detecting compensatory movements, and flagging risk of re-injury. Systems replace periodic clinic visits with 
+            continuous home-based assessment. Explainable AI (XAI) aids occupational therapists in interpreting 
+            machine decisions for patient care.
+          </p>
+          <div class="app-tag">Healthcare</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">💼</div>
+          <h3>Workplace Ergonomics</h3>
+          <p>
+            Ergonomic risk assessment systems analyse workers' postures during manual handling tasks using inertial sensors 
+            or cameras. Deep learning models compute ergonomic risk scores (similar to RULA/REBA), automatically generate 
+            reports, and identify high-risk postures that lead to musculoskeletal disorders — enabling proactive prevention 
+            without ergonomists on the floor.
+          </p>
+          <div class="app-tag">Industry</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🏋️</div>
+          <h3>Sports &amp; Fitness</h3>
+          <p>
+            Athletes and fitness enthusiasts receive real-time form correction during lifts, runs, and yoga sessions. Systems 
+            compare a user's pose against reference poses, score similarity, and deliver corrective audio/visual cues. 
+            Injury risk from poor biomechanics is reduced by providing data-driven technique coaching without a human coach present.
+          </p>
+          <div class="app-tag">Sports Science</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🪑</div>
+          <h3>Sedentary Behaviour Monitoring</h3>
+          <p>
+            Extended periods of poor sitting posture contribute to chronic neck and back pain among office workers. 
+            AI-based sitting posture classifiers operating on continuously-running webcams can alert users when 
+            they slouch, forward-flex the neck, or adopt asymmetric sitting positions — seamlessly integrated 
+            with desktop or mobile applications.
+          </p>
+          <div class="app-tag">Workplace / Home</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🎓</div>
+          <h3>Educational Settings</h3>
+          <p>
+            Monitoring students' and lecturers' postures in classrooms can reveal fatigue, disengagement, or biomechanical 
+            issues associated with prolonged sitting in school furniture. Research shows deep learning can evaluate 
+            lecture posture quality non-intrusively, informing classroom and furniture design improvements.
+          </p>
+          <div class="app-tag">Education</div>
+        </div>
+        <div class="app-card">
+          <div class="app-icon">🚗</div>
+          <h3>Driver Safety</h3>
+          <p>
+            Vehicle-mounted cameras use driver hand-position and body posture classification models to detect unsafe or 
+            fatigued driving postures. Real-time alerts can prevent accidents caused by awkward steering postures 
+            or microsleep-induced slumping, representing a significant automotive safety advance.
+          </p>
+          <div class="app-tag">Automotive Safety</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CHALLENGES ===== -->
+  <section class="section" id="challenges">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Limitations &amp; Future Work</span>
+        <h2 class="section-title">Challenges &amp; Future Directions</h2>
+        <p class="section-subtitle">
+          Current limitations of deep learning posture assessment and the road ahead
+        </p>
+      </div>
+      <div class="challenges-layout">
+        <div class="challenges-list">
+          <div class="challenge-item">
+            <div class="challenge-icon">⚠️</div>
+            <div>
+              <h4>Occlusion &amp; Crowded Scenes</h4>
+              <p>Models struggle when body parts are hidden behind objects or when multiple people overlap. 
+              This is a persistent bottleneck in real-world deployment beyond controlled lab settings.</p>
+            </div>
+          </div>
+          <div class="challenge-item">
+            <div class="challenge-icon">📦</div>
+            <div>
+              <h4>Data Scarcity &amp; Annotation Cost</h4>
+              <p>Deep learning requires large, precisely annotated datasets with 3D ground-truth poses. 
+              Collecting clinical-grade posture datasets is expensive, time-consuming, and privacy-sensitive.</p>
+            </div>
+          </div>
+          <div class="challenge-item">
+            <div class="challenge-icon">🌐</div>
+            <div>
+              <h4>3D Depth Perception from 2D Cameras</h4>
+              <p>Estimating true 3D body pose from monocular (single-lens) camera images is an 
+              inherently ill-posed mathematical problem, leading to depth ambiguities and reduced accuracy.</p>
+            </div>
+          </div>
+          <div class="challenge-item">
+            <div class="challenge-icon">🔬</div>
+            <div>
+              <h4>Model Interpretability (XAI)</h4>
+              <p>Clinical adoption requires transparency in how models reach their assessments. 
+              Black-box deep learning decisions are difficult to validate for medical use, 
+              necessitating Explainable AI integration.</p>
+            </div>
+          </div>
+          <div class="challenge-item">
+            <div class="challenge-icon">💻</div>
+            <div>
+              <h4>Computational Demands</h4>
+              <p>High-accuracy 3D pose estimation and video-based temporal models are computationally 
+              intensive, limiting deployment on low-power mobile and IoT devices without model compression.</p>
+            </div>
+          </div>
+          <div class="challenge-item">
+            <div class="challenge-icon">🌍</div>
+            <div>
+              <h4>Generalisation Across Populations</h4>
+              <p>Models trained on specific demographics (age, body type, clothing) may underperform on 
+              underrepresented groups, raising fairness concerns in clinical and consumer applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="future-card">
+          <h3>🚀 Future Research Directions</h3>
+          <ul>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Transformer-based pose models</strong> (e.g. ViTPose) for superior accuracy and occlusion robustness</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Federated learning</strong> for privacy-preserving training on distributed clinical data</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Multi-modal fusion</strong> — combining RGB cameras with IMU sensors and depth cameras</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Self-supervised pre-training</strong> to reduce reliance on costly annotated datasets</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Edge AI deployment</strong> with model quantisation and pruning for IoT and wearables</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Explainable AI (XAI)</strong> integration for clinical-grade posture assessment reporting</span>
+            </li>
+            <li>
+              <div class="future-dot"></div>
+              <span><strong>Longitudinal studies</strong> validating AI assessments against clinical gold standards</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== REFERENCES ===== -->
+  <section class="section section-dark" id="references">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-badge">Academic Literature</span>
+        <h2 class="section-title">Journal References</h2>
+        <p class="section-subtitle">
+          Peer-reviewed research papers and key publications cited in this resource
+        </p>
+      </div>
+
+      <div class="ref-filter">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="ieee">IEEE</button>
+        <button class="filter-btn" data-filter="mdpi">MDPI</button>
+        <button class="filter-btn" data-filter="nih">NIH / PubMed</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="references-grid" id="refGrid">
+
+        <div class="ref-card" data-tag="ieee">
+          <div class="ref-number">[1]</div>
+          <div class="ref-content">
+            <div class="ref-tag ieee">IEEE</div>
+            <h4 class="ref-title">OpenPose: Realtime Multi-Person 2D Pose Estimation Using Part Affinity Fields</h4>
+            <p class="ref-authors">Z. Cao, G. Hidalgo, T. Simon, S.-E. Wei, Y. Sheikh</p>
+            <p class="ref-journal">IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI), Vol. 43, No. 1, pp. 172–186, 2021</p>
+            <div class="ref-details">
+              <span class="ref-doi">DOI: 10.1109/TPAMI.2019.2929257</span>
+              <a href="https://doi.org/10.1109/TPAMI.2019.2929257" target="_blank" class="ref-link">View Paper ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Introduces OpenPose, a foundational bottom-up approach using Part Affinity Fields for detecting 2D human pose 
+              keypoints of multiple people in a single image in real time. Establishes the benchmark for subsequent 
+              posture assessment research worldwide.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="mdpi">
+          <div class="ref-number">[2]</div>
+          <div class="ref-content">
+            <div class="ref-tag mdpi">MDPI</div>
+            <h4 class="ref-title">Human Pose Estimation Using MediaPipe Pose and Optimization Method Based on a Humanoid Model</h4>
+            <p class="ref-authors">J.-W. Kim, J.-Y. Choi, E.-J. Ha, J.-H. Choi</p>
+            <p class="ref-journal">Applied Sciences, MDPI, Vol. 13, No. 4, p. 2700, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">DOI: 10.3390/app13042700</span>
+              <a href="https://doi.org/10.3390/app13042700" target="_blank" class="ref-link">View Paper ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Combines MediaPipe Pose for 2D landmark detection with a humanoid model optimization to estimate 3D human poses 
+              in lightweight, real-time systems. Demonstrates applicability for fall detection and posture monitoring on edge devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="mdpi">
+          <div class="ref-number">[3]</div>
+          <div class="ref-content">
+            <div class="ref-tag mdpi">MDPI</div>
+            <h4 class="ref-title">Comparative Analysis of Skeleton-Based Human Pose Estimation</h4>
+            <p class="ref-authors">J.-L. Chung, L.-Y. Ong, M.-C. Leow</p>
+            <p class="ref-journal">Future Internet, MDPI, Vol. 14, No. 12, p. 380, 2022</p>
+            <div class="ref-details">
+              <span class="ref-doi">DOI: 10.3390/fi14120380</span>
+              <a href="https://doi.org/10.3390/fi14120380" target="_blank" class="ref-link">View Paper ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Comparative study of OpenPose, PoseNet, MoveNet, and MediaPipe Pose libraries for skeleton-based human pose estimation. 
+              Evaluates strengths, weaknesses, and applicability to medical assistance and sports motion analysis.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="nih">
+          <div class="ref-number">[4]</div>
+          <div class="ref-content">
+            <div class="ref-tag nih">NIH / PubMed</div>
+            <h4 class="ref-title">Deep Learning for Fine-Grained Quantification of Postural Control in Clinical Assessment</h4>
+            <p class="ref-authors">Multiple Authors</p>
+            <p class="ref-journal">National Institutes of Health – PubMed Central, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: PubMed Central (PMC)</span>
+              <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank" class="ref-link">Search PubMed ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Investigates application of deep learning models for fine-grained quantitative postural control assessment in 
+              clinical settings. Demonstrates AI-based methods provide interpretable indices assisting occupational therapists 
+              and reduces assessment subjectivity.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="mdpi">
+          <div class="ref-number">[5]</div>
+          <div class="ref-content">
+            <div class="ref-tag mdpi">MDPI</div>
+            <h4 class="ref-title">A Holistic Posture Assessment Framework Using Inertial Data and Deep Learning for Ergonomic Risk Quantification</h4>
+            <p class="ref-authors">Research Team — MDPI Sensors / Applied Sciences</p>
+            <p class="ref-journal">MDPI Applied Sciences / Sensors, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: mdpi.com</span>
+              <a href="https://www.mdpi.com/journal/applsci" target="_blank" class="ref-link">MDPI Applied Sci ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Proposes a holistic framework combining inertial measurement unit (IMU) data and deep learning to quantify ergonomic 
+              risk from problematic worker postures. Automatically generates educational posture correction reports for users.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="nih">
+          <div class="ref-number">[6]</div>
+          <div class="ref-content">
+            <div class="ref-tag nih">NIH / PubMed</div>
+            <h4 class="ref-title">AI-Driven Real-Time Posture Assessment and Rehabilitation: Overcoming Limitations of Conventional Methods</h4>
+            <p class="ref-authors">Multiple Authors</p>
+            <p class="ref-journal">PubMed Central (PMC), National Institutes of Health, 2024</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: nih.gov / PMC</span>
+              <a href="https://pmc.ncbi.nlm.nih.gov/" target="_blank" class="ref-link">View on PMC ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Reviews AI-driven frameworks for real-time posture monitoring, highlighting how deep learning overcomes subjectivity, 
+              intermittence, and imprecision of conventional assessment. Covers remote rehabilitation integration and lightweight 
+              models on consumer-grade devices.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="other">
+          <div class="ref-number">[7]</div>
+          <div class="ref-content">
+            <div class="ref-tag other">Conference / Other</div>
+            <h4 class="ref-title">Automated Body Postures Assessment from Still Images Using MediaPipe</h4>
+            <p class="ref-authors">M. H. Aziz, H. A. Mahmood</p>
+            <p class="ref-journal">Journal of Engineering and Applied Sciences (DergiPark), Vol. 2, No. 2, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: dergipark.org.tr</span>
+              <a href="https://dergipark.org.tr/en" target="_blank" class="ref-link">View on DergiPark ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Proposes a framework for automatic real-time posture assessment from still images using Google MediaPipe. 
+              Detects reference poses, extracts discriminative features from landmarks, and provides corrective feedback 
+              for postural comparison.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="other">
+          <div class="ref-number">[8]</div>
+          <div class="ref-content">
+            <div class="ref-tag other">Intelligent Systems</div>
+            <h4 class="ref-title">Intelligent Real-Time Posture Assessment System Using MediaPipe and Random Forest</h4>
+            <p class="ref-authors">Research Team</p>
+            <p class="ref-journal">Eudoxus Press / International Journal of Engineering &amp; Applied Sciences, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">Accuracy: 95%+ in sitting posture classification</span>
+              <a href="https://eudoxuspress.com/" target="_blank" class="ref-link">Eudoxus Press ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Implements an intelligent sitting posture assessment system combining MediaPipe landmark detection with a 
+              Random Forest classifier. Achieves over 95% accuracy in classifying multiple sitting posture classes and provides 
+              real-time visual and audio feedback.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="mdpi">
+          <div class="ref-number">[9]</div>
+          <div class="ref-content">
+            <div class="ref-tag mdpi">MDPI</div>
+            <h4 class="ref-title">Real-Time Yoga Posture Recognition and Evaluation Using Deep Learning</h4>
+            <p class="ref-authors">Research Team</p>
+            <p class="ref-journal">MDPI Applied Sciences / Sensors, 2023–2024</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: mdpi.com</span>
+              <a href="https://www.mdpi.com/journal/sensors" target="_blank" class="ref-link">MDPI Sensors ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Applies deep learning for real-time recognition and quality evaluation of yoga postures, providing instructors 
+              and practitioners with precise feedback. Demonstrates broad applicability of pose estimation to fitness 
+              and wellness self-assessment scenarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="ieee">
+          <div class="ref-number">[10]</div>
+          <div class="ref-content">
+            <div class="ref-tag ieee">IEEE</div>
+            <h4 class="ref-title">Hybrid Machine Learning and Deep Learning Approach for Posture Identification and Prediction</h4>
+            <p class="ref-authors">Research Team</p>
+            <p class="ref-journal">IEEE Sensors Letters / IEEE Access, 2023</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: ieee-sensorsalert.org / IEEE Xplore</span>
+              <a href="https://ieeexplore.ieee.org/" target="_blank" class="ref-link">IEEE Xplore ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Proposes a hybrid approach integrating traditional machine learning with deep learning for superior posture 
+              identification and prediction. Demonstrates improved accuracy and generalisation over single-paradigm approaches 
+              in workplace ergonomic risk scenarios.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="other">
+          <div class="ref-number">[11]</div>
+          <div class="ref-content">
+            <div class="ref-tag other">ResearchGate</div>
+            <h4 class="ref-title">Digital AI Posture Assessment and Correction Systems: A Comparative Review</h4>
+            <p class="ref-authors">Multiple Authors</p>
+            <p class="ref-journal">ResearchGate Preprint / Conference Paper, 2023–2024</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: researchgate.net</span>
+              <a href="https://www.researchgate.net/" target="_blank" class="ref-link">ResearchGate ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Compares traditional posture assessment methods against AI-based digital systems, demonstrating significant 
+              improvements in postural awareness and clinical outcome measures. Highlights the role of camera-based 
+              deep learning systems in replacing subjective clinician evaluations.
+            </p>
+          </div>
+        </div>
+
+        <div class="ref-card" data-tag="other">
+          <div class="ref-number">[12]</div>
+          <div class="ref-content">
+            <div class="ref-tag other">Preprint</div>
+            <h4 class="ref-title">CNN-LSTM Hybrid Models for Human Pose Estimation: A Systematic Review</h4>
+            <p class="ref-authors">Multiple Authors</p>
+            <p class="ref-journal">Preprints.org / ArXiv, 2023–2024</p>
+            <div class="ref-details">
+              <span class="ref-doi">Available: preprints.org</span>
+              <a href="https://www.preprints.org/" target="_blank" class="ref-link">Preprints.org ↗</a>
+            </div>
+            <p class="ref-abstract">
+              Systematic review of CNN-LSTM hybrid architectures for human pose estimation from video. 
+              Analyses temporal modelling strategies, attention mechanisms, and Transformer integration,
+              synthesising performance benchmarks across major public datasets.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <span class="logo-icon">🧠</span>
+          <span class="footer-brand-name">PostureDL</span>
+          <p>A curated educational resource on deep learning–based posture self-assessment, compiled from peer-reviewed journals and research publications.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Navigation</h4>
+          <ul>
+            <li><a href="#overview">Overview</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
+            <li><a href="#techniques">Techniques</a></li>
+            <li><a href="#applications">Applications</a></li>
+            <li><a href="#challenges">Challenges</a></li>
+            <li><a href="#references">References</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>Key Sources</h4>
+          <ul>
+            <li><a href="https://ieeexplore.ieee.org" target="_blank">IEEE Xplore</a></li>
+            <li><a href="https://www.mdpi.com" target="_blank">MDPI Journals</a></li>
+            <li><a href="https://pubmed.ncbi.nlm.nih.gov" target="_blank">PubMed / NIH</a></li>
+            <li><a href="https://www.researchgate.net" target="_blank">ResearchGate</a></li>
+            <li><a href="https://arxiv.org" target="_blank">ArXiv</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2024 PostureDL — Educational Resource. Content based on publicly available research. All journal references cited with DOIs.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    // Navbar scroll effect
+    const navbar = document.getElementById('navbar');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    });
+
+    // Hamburger menu
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('navLinks');
+    hamburger.addEventListener('click', () => {
+      navLinks.classList.toggle('open');
+      hamburger.classList.toggle('active');
+    });
+
+    // Close nav on link click
+    document.querySelectorAll('.nav-link').forEach(link => {
+      link.addEventListener('click', () => {
+        navLinks.classList.remove('open');
+        hamburger.classList.remove('active');
+      });
+    });
+
+    // Active nav highlight on scroll
+    const sections = document.querySelectorAll('section[id]');
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        if (window.scrollY >= section.offsetTop - 100) {
+          current = section.getAttribute('id');
+        }
+      });
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === '#' + current) {
+          link.classList.add('active');
+        }
+      });
+    });
+
+    // Reference filter
+    const filterBtns = document.querySelectorAll('.filter-btn');
+    const refCards  = document.querySelectorAll('.ref-card');
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        refCards.forEach(card => {
+          if (filter === 'all' || card.dataset.tag === filter) {
+            card.style.display = 'flex';
+            card.classList.add('fade-in');
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('.info-card, .tech-card, .app-card, .ref-card, .pipeline-step, .challenge-item').forEach(el => {
+      observer.observe(el);
+    });
+  </script>
+</body>
+</html>
